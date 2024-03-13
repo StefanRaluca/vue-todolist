@@ -1,3 +1,8 @@
 .decor_text {
     text-decoration: line-through;
   }
+  .icon_x {
+    cursor: pointer;
+    margin: 10px;
+  }
+
