@@ -17,7 +17,7 @@
         <button @click="addTodo">Add⏬</button>
         <ul>
             <li v-for="(todo, i) in todos">
-                <span :class="{'decor_text':todo.done}"> {{todo.text}} </span>
+                <span :class="{'decor_text':todo.done}"@click='changedone(i)'> {{todo.text}} </span>
                 <span class="icon_x" @click="canceltodo(i)">❌</span>
             </li>
 

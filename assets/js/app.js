@@ -28,6 +28,7 @@ createApp({
             //facciamo una condizione per non stampare in pagina i spazi vuoti 
             if (this.newTodo.trim() !== ('')) {
 
+        
                 this.todos.push({ text: this.newTodo, done: false });
 
                 // Svuota il campo di input dopo l aggiunta del todo
@@ -35,6 +36,14 @@ createApp({
 
             }
         },
+        changedone(i) {
+
+            //assegniamo un valore invertito al done
+            this.todos[i].done = !this.todos[i].done
+console.log('hello');
+            //this.todos[i].done = this.todos[i].done ? false : true; 
+           // console.log('ciao');
+        }
 
 
 
