@@ -9,10 +9,12 @@
 </head>
 
 <body>
-  
-    <div id="app"> 
-         <h1>Vue To Do List</h1>
-        
+
+
+    <div id="app">
+        <h1>Vue To Do List</h1>
+        <input type="text" v-model="newTodo" placeholder="Type a new todo" @keypress.enter="addTodo">
+        <button @click="addTodo">Add⏬</button>
         <ul>
             <li v-for="(todo, i) in todos">
                 <span :class="{'decor_text':todo.done}"> {{todo.text}} </span>

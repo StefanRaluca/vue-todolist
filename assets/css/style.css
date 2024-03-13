@@ -1,8 +1,36 @@
 .decor_text {
-    text-decoration: line-through;
-  }
-  .icon_x {
-    cursor: pointer;
-    margin: 10px;
-  }
+  text-decoration: line-through;
+}
 
+.icon_x {
+  cursor: pointer;
+  margin: 10px;
+}
+
+
+input[type="text"] {
+  padding: 8px;
+  font-size: 16px;
+
+}
+
+
+button {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  width: 20%;
+}
+
+#app {
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: auto;
+  padding: 10px;
+}
